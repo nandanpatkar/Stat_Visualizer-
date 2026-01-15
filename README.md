@@ -1,92 +1,148 @@
-# 📊 Statistics Learning App
+# Statistics & Machine Learning Learning App
 
-An interactive web application built with Streamlit to make statistics **visual, interactive, and easy to understand** for learners at all levels. This comprehensive app covers both descriptive and inferential statistics with rich visualizations and hands-on tools.
+An interactive Streamlit application for learning statistics and machine learning through visualization and hands-on exploration. Now featuring **10+ machine learning algorithms** with comprehensive explanations and interactive interfaces!
 
-## 🎯 Features
+## 🆕 Version 2.0 Features
 
-### Descriptive Statistics
-- **Measures of Central Tendency**: Mean, Median, Mode
-- **Measures of Dispersion**: Variance, Standard Deviation, Coefficient of Variation (CV), IQR, Range
-- **Positional Measures**: Quartiles, Deciles, Percentiles
-- **Visualizations**:
-  - Histograms with mean/median lines
-  - Box plots for quartile analysis
-  - Q-Q plots for normality testing
-  - Violin plots for distribution shape
+### 📊 Statistics (Enhanced)
+- **Descriptive Statistics**: Calculate and visualize measures of central tendency, dispersion, quartiles, and percentiles
+- **Inferential Statistics**: Perform Z-tests, T-tests, and confidence interval calculations  
+- **Central Limit Theorem**: Interactive demonstration with various population distributions
+- **Modular Architecture**: Clean, PEP8-compliant code structure
 
-### Inferential Statistics
-- **Z-Scores**: Calculate and interpret standardized scores
-- **Z-Test**: One-sample hypothesis testing with visualization
-- **T-Tests**:
-  - One-sample t-test
-  - Two-sample independent t-test
-  - Paired t-test
-- **Confidence Intervals**: Calculate and visualize confidence intervals at different levels (90%, 95%, 99%)
+### 🤖 Machine Learning Algorithms
+- **Supervised Learning**:
+  - Linear Regression - Predict continuous values with linear relationships
+  - Logistic Regression - Binary and multi-class classification
+  - Decision Trees - Interpretable tree-based models
+  - Random Forest - Ensemble of decision trees
+  - Support Vector Machine (SVM) - Maximum margin classification
+  - Naive Bayes - Probabilistic classification
+  - K-Nearest Neighbors (KNN) - Instance-based learning
+  - Neural Networks - Multi-layer perceptrons
+  - Gradient Boosting - Sequential ensemble learning
 
-### Central Limit Theorem (CLT)
-- **Interactive Demonstration**: See CLT in action with different population distributions
-- **Multiple Distributions**: Uniform, Exponential, Bimodal, Right-Skewed
-- **Adjustable Parameters**: Control sample size and number of samples
-- **Real-time Comparison**: Compare population vs sampling distribution
-- **Normality Testing**: Automatic statistical tests for normality
+- **Unsupervised Learning**:
+  - K-Means Clustering - Partition data into clusters
 
-## 🚀 Getting Started
+### 🎯 Interactive Features
+- **Real-time Parameter Tuning**: Adjust algorithm parameters and see results instantly
+- **Comprehensive Visualizations**: Decision boundaries, learning curves, feature importance
+- **Educational Explanations**: Theory, advantages, disadvantages, and use cases for each algorithm
+- **Performance Metrics**: Accuracy, precision, recall, F1-score, R², and more
+- **Data Input Options**: Upload CSV files, use sample data, or enter custom numbers
 
-### Prerequisites
-- Python 3.8 or higher
-- pip package manager
+## 🏗️ Project Structure
 
-### Installation
+```
+Stat_Visualizer-/
+├── algorithms/              # Machine learning algorithms
+│   ├── __init__.py
+│   ├── linear_regression.py
+│   ├── logistic_regression.py
+│   ├── decision_tree.py
+│   ├── random_forest.py
+│   ├── k_means.py
+│   ├── k_nearest_neighbors.py
+│   ├── support_vector_machine.py
+│   ├── naive_bayes.py
+│   ├── gradient_boosting.py
+│   └── neural_network.py
+├── stat_analysis/           # Statistical analysis modules  
+│   ├── __init__.py
+│   └── descriptive_stats.py
+├── utils/                   # Utility functions
+│   ├── __init__.py
+│   └── data_utils.py
+├── main_app.py             # Main application entry point
+├── app.py                  # Original monolithic app (preserved)
+├── requirements.txt        # Dependencies
+└── README.md              # This file
+```
 
-1. **Clone the repository**
-   ```bash
-   git clone <repository-url>
-   cd Stat_Visualizer-
-   ```
+## 📋 Installation
 
-2. **Install dependencies**
-   ```bash
-   pip install -r requirements.txt
-   ```
+1. Clone this repository:
+```bash
+git clone <repository-url>
+cd Stat_Visualizer-
+```
 
-3. **Run the app**
-   ```bash
-   streamlit run app.py
-   ```
+2. Install the required dependencies:
+```bash
+pip install -r requirements.txt
+```
 
-4. **Open in browser**
-   The app will automatically open in your default browser at `http://localhost:8501`
+## 🚀 Usage
 
-## 📖 How to Use
+### New Modular App (Recommended)
+Run the enhanced modular application:
+```bash
+streamlit run main_app.py
+```
 
-### Data Input Options
+### Original App (Legacy)
+Run the original monolithic app:
+```bash
+streamlit run app.py
+```
 
-The app provides three ways to input data:
+## 🎓 Learning Path
 
-1. **Sample Data (Default)**
-   - Pre-loaded normal distribution data (n=1000, μ=100, σ=15)
-   - Perfect for learning and experimentation
+1. **Start with Statistics**: Understand your data through descriptive statistics
+2. **Explore Algorithms**: Try different ML algorithms on the same dataset
+3. **Compare Performance**: Use metrics to evaluate which algorithms work best
+4. **Understand Theory**: Read the explanations to understand when and why to use each algorithm
+5. **Experiment**: Adjust parameters to see how they affect model performance
 
-2. **Upload CSV**
-   - Upload your own dataset
-   - Select which column to analyze
-   - Supports standard CSV format
+## 🛠️ Technical Details
 
-3. **Manual Entry**
-   - Enter custom numbers (comma or space separated)
-   - Great for small datasets or homework problems
+- **Framework**: Streamlit for web interface
+- **ML Library**: Scikit-learn for algorithms
+- **Visualization**: Matplotlib, Seaborn, Plotly for interactive plots
+- **Data Processing**: NumPy, Pandas for data manipulation
+- **Code Style**: PEP8 compliant with modular architecture
+- **Documentation**: Comprehensive docstrings and comments
 
-### Navigation
+## 📊 Supported Data Types
 
-Use the sidebar to navigate between different topics:
+- **CSV Files**: Upload your own datasets
+- **Sample Data**: Pre-generated datasets for quick exploration
+- **Manual Entry**: Enter custom numbers for analysis
 
-- **Home**: Overview and getting started guide
-- **Descriptive Statistics**: Explore your data's characteristics
-- **Inferential Statistics**: Perform hypothesis tests and create confidence intervals
-- **Central Limit Theorem**: Interactive CLT demonstration
-- **About**: App information and documentation
+## 📈 Algorithm Capabilities
 
-## 📊 Statistics Covered
+Each algorithm includes:
+- ✅ Theoretical explanation with mathematical formulas
+- ✅ Interactive parameter tuning
+- ✅ Real-time visualizations
+- ✅ Performance metrics and evaluation
+- ✅ Advantages and disadvantages
+- ✅ Real-world use cases
+- ✅ Interpretation guidelines
+
+## 🔧 Requirements
+
+See `requirements.txt` for the complete list of dependencies:
+- streamlit>=1.31.0
+- scikit-learn>=1.4.0  
+- numpy>=1.26.3
+- pandas>=2.2.0
+- matplotlib>=3.8.2
+- seaborn>=0.13.2
+- plotly>=5.18.0
+- scipy>=1.12.0
+
+## 🤝 Contributing
+
+This project follows PEP8 standards and uses a modular architecture. To add new algorithms:
+
+1. Create a new file in the `algorithms/` directory
+2. Follow the existing class structure and interface
+3. Include comprehensive documentation and visualizations
+4. Add the algorithm to `__init__.py` and `main_app.py`
+
+## 📊 Statistics Covered (Legacy App)
 
 ### Descriptive Statistics
 
@@ -126,154 +182,79 @@ CI = x̄ ± t(α/2, df) × (s / √n)
 
 ### For Students
 - Learn statistical concepts through visualization
-- Verify homework calculations
-- Understand when to use different tests
-- Build intuition for statistical distributions
+- Understand machine learning algorithms step by step
+- Experiment with parameters and see real-time results
+- Build intuition for both statistics and ML
 
 ### For Teachers
-- Demonstrate statistical concepts in class
-- Create interactive examples
+- Demonstrate concepts in class with interactive examples
 - Show real-time parameter effects
 - Engage students with hands-on learning
+- Compare different algorithms side by side
 
-### For Data Analysts
+### For Data Scientists
 - Quick exploratory data analysis
-- Test assumptions before analysis
-- Visualize distributions
-- Verify statistical test results
+- Algorithm comparison and selection
+- Feature importance analysis
+- Model performance evaluation
 
-## 💡 Tips and Best Practices
+## 💡 Machine Learning Tips
 
-### Understanding Your Data
-1. Always start with **Descriptive Statistics** to understand your data
-2. Check the **histogram** and **Q-Q plot** for normality
-3. Look at **box plots** to identify outliers
-4. Compare **mean vs median** to detect skewness
+### Algorithm Selection Guide
 
-### Choosing Statistical Tests
+**Use Linear Regression when:**
+- Target is continuous
+- Relationship appears linear
+- Need interpretable coefficients
 
-**Use Z-Test when:**
-- Large sample size (n > 30)
-- Population standard deviation is known
-- Data is approximately normal
+**Use Logistic Regression when:**
+- Binary or multi-class classification
+- Need probability estimates
+- Linear decision boundary is sufficient
 
-**Use T-Test when:**
-- Small sample size (n < 30)
-- Population standard deviation is unknown
-- Data is approximately normal
+**Use Decision Trees when:**
+- Need highly interpretable model
+- Data has both numerical and categorical features
+- Non-linear relationships expected
 
-**Use Paired T-Test when:**
-- Comparing before/after measurements
-- Matched pairs or repeated measures
+**Use Random Forest when:**
+- Want better performance than single tree
+- Can sacrifice some interpretability
+- Have mixed data types
 
-### Central Limit Theorem Exploration
-1. Start with a **non-normal distribution** (e.g., Exponential)
-2. Use a **small sample size** (n=5) and observe the sampling distribution
-3. Gradually **increase sample size** to n=30, n=50, n=100
-4. Watch the sampling distribution become **more normal**
-5. Understand that this works for **any population distribution**
+**Use SVM when:**
+- High-dimensional data
+- Clear margin of separation
+- Robust to outliers needed
 
-## 🛠️ Technical Details
+**Use K-Means when:**
+- Need to find natural groupings
+- Know approximate number of clusters
+- Features are on similar scales
 
-### Dependencies
-- **streamlit**: Web framework for the app
-- **numpy**: Numerical computations
-- **pandas**: Data manipulation
-- **scipy**: Statistical functions
-- **matplotlib**: Static visualizations
-- **seaborn**: Statistical visualizations
-- **plotly**: Interactive visualizations
+## 📝 Version History
 
-### Project Structure
-```
-Stat_Visualizer-/
-├── app.py              # Main Streamlit application
-├── requirements.txt    # Python dependencies
-└── README.md          # This file
-```
-
-## 🎨 Features Highlights
-
-### Interactive Visualizations
-- Real-time updates as you change parameters
-- Multiple visualization types for each concept
-- Color-coded statistical markers
-- Detailed annotations and labels
-
-### Educational Content
-- Clear explanations for each concept
-- Formula displays
-- Interpretation guidelines
-- Best practices and tips
-
-### User-Friendly Interface
-- Clean, intuitive navigation
-- Responsive layout
-- Mobile-friendly design
-- Professional styling
-
-## 📝 Example Workflows
-
-### Workflow 1: Analyzing Survey Data
-1. Upload your survey CSV file
-2. Select the column to analyze (e.g., "age", "satisfaction_score")
-3. View descriptive statistics to understand the distribution
-4. Use box plots to identify outliers
-5. Calculate confidence intervals for the mean
-6. Perform hypothesis test if needed
-
-### Workflow 2: Comparing Two Groups
-1. Upload data with two groups
-2. Navigate to Inferential Statistics → T-Test
-3. Select "Two-Sample T-Test"
-4. Examine group distributions
-5. Interpret the p-value and conclusion
-
-### Workflow 3: Understanding CLT
-1. Navigate to Central Limit Theorem
-2. Choose "Exponential" distribution (clearly non-normal)
-3. Start with sample size n=5
-4. Generate samples and observe the distribution
-5. Increase sample size to n=30, then n=50
-6. Watch the sampling distribution become normal
+- **v2.0.0**: Complete rewrite with machine learning integration and modular architecture
+- **v1.0.0**: Original statistics learning app
 
 ## 🔍 Troubleshooting
 
 ### App doesn't start
 - Ensure all dependencies are installed: `pip install -r requirements.txt`
 - Check Python version: `python --version` (should be 3.8+)
-- Try: `python -m streamlit run app.py`
+- Try: `python -m streamlit run main_app.py`
 
-### Data upload issues
-- Ensure CSV file is properly formatted
-- Check for missing values in the selected column
-- Verify column names don't have special characters
+### Import errors
+- Make sure scikit-learn is installed: `pip install scikit-learn`
+- Try upgrading dependencies: `pip install --upgrade -r requirements.txt`
 
-### Visualization not showing
-- Refresh the page
-- Check browser console for errors
-- Try a different browser (Chrome recommended)
-
-## 🤝 Contributing
-
-This is an educational project. Suggestions for improvements are welcome!
-
-## 📄 License
-
-This project is created for educational purposes.
-
-## 👨‍💻 Author
-
-Built with ❤️ for statistics learners everywhere.
-
-## 🙏 Acknowledgments
-
-- Statistical formulas and concepts from standard statistics textbooks
-- Visualization inspiration from educational statistics resources
-- Built with the amazing Streamlit framework
+### Performance issues
+- Use smaller datasets for real-time interaction
+- Some algorithms (like Neural Networks) may take longer to train
+- Consider reducing the number of iterations for complex algorithms
 
 ---
 
-**Happy Learning! 📊📈📉**
+**Made with ❤️ for data science learners everywhere**
 
 For questions or feedback, please open an issue in the repository.
